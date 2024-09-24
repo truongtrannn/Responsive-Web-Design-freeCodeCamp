@@ -1,0 +1,37 @@
+<h1 id="title">Survey Form</h1>
+<p id="description" >This is the a Survey form</p>
+<form id="survey-form">
+  <label id="name-label">Your name: <input id="name" type="text" placeholder="Tiffany Truong" required><label>
+  <label id="email-label">Your email: <input id="email" type="email" placeholder="abc@email.com" required></label>
+  <label id="number-label">Your number: <input id="number" type="number" pattern=[0-9] min="1" max="9999999999" placeholder="0123456789"></label>
+ <fieldset> Will you invite your friends to join us? <select id="dropdown">
+    <option value="">(select)</option>
+    <option value="1">yes</option>
+    <option value="2">no</option>
+  </select></fieldset>
+<fieldset>
+  <label for="like-dislike">Are you into Survey Forms?
+  <input id="like-dislike" type="radio" name="think" value="like">like
+  <input id="like-dislike" type="radio" name="think" value="dislike">dislike
+  </label>
+  <label>Choose the word(s) describing this survey: 
+    <input type="radio" name="describe" value="useful">useful
+    <input type="radio" name="describe" value="insightful">insightful
+  </label>
+</fieldset>
+<fieldset>
+  <label>Choose something harmful: 
+  <input type="checkbox"name="plasticbag" value="plasticbag">plastic bag
+  <input type="checkbox" name="toxicfriends" value="toxicfriends">toxic friends
+  <input type="checkbox" name="socialmedia" value="socialmedia">social media
+  </label>
+</fieldset>
+<fieldset>
+  <label for="advice">Something you want us to advise young people: 
+    <textarea id="advice" placeholder="This will be a useful advise"></textarea>
+  </label>
+  </fieldset>
+<fieldset for="submit">
+  <input id="submit" type="submit" value="Send">
+</fieldset>
+</form>
